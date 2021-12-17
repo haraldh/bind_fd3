@@ -1,7 +1,4 @@
-#![feature(io_safety)]
-
-use libc::{close, dup2, getpid};
-use std::env;
+use libc::{close, dup2};
 use std::net::TcpListener;
 use std::os::unix::io::AsRawFd;
 use std::os::unix::process::CommandExt;
